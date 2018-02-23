@@ -1,1 +1,2 @@
-this is a project of python django.
+this is a project of django written by python .
+the content is about Chinese law
