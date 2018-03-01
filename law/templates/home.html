@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lawtribes</title>
+</head>
+<body>
+欢迎光临{{ info_dict.site }},it's a site about {{ info_dict.content}}
+<br>
+{{ string }}
+<br>
+{% if request.user.is_authenticated %}
+{{ request.user.username }},hello!
+{% else %}
+please login
+{% endif %}
+<a href="{{ request.path }}?{{ request.GET.urlencode }}">url</a>
+
+
+<br>
+{% for item in List %}
+{{item}}
+{% if not forloop.last %}
+,
+{% endif %}
+{% endfor %}
+
+<br>
+
+{% for item in tlist%}
+{% if 4 <= item and item <= 8 %}
+{{ item }}
+{% endif %}
+{% endfor %}
+<br>
+
+{% for i in tlist %}
+{{i}}<br>
+{% endfor %}
+
+</body>
+</html>
+ 
