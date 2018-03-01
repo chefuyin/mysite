@@ -1,2 +1,3 @@
-this is a project of django written by python .
-the content is about Chinese law
+自强学堂：https://code.ziqiangxuetang.com/django/django-tutorial.html
+
+模板进阶：https://code.ziqiangxuetang.com/django/django-template2.html
