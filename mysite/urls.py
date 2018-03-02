@@ -18,8 +18,9 @@ from django.urls import path
 from law import views as law_views
 
 urlpatterns = [
-    path('', law_views.index), # add the app
+    path('', law_views.index,name='index'), # add the app
+    path('index/',law_views.index,name='index'),
     path('admin/', admin.site.urls),
     path('home/',law_views.home,name='home'),
-    path('index/',law_views.index,name='index'),
+    
 ]

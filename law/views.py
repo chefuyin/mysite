@@ -16,4 +16,5 @@ def home(request):
 
 
 def index(request):
-    return HttpResponse("HELLO,WORLD!YOU'RE AT THE INDEX.IT'S {}".format(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())))
+    # return HttpResponse("HELLO,WORLD!YOU'RE AT THE INDEX.IT'S {}".format(time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())))
+    return render(request,'index.html')
